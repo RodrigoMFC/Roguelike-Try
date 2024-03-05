@@ -1,0 +1,1993 @@
+fileFormatVersion: 2
+guid: 4b3c973716e2e6242914d7628f6547d9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Clothing-no-bg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682538864022072468b12e7de8df19fb
+      internalID: 1663986554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 190
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1a1160ec3bd77449aea9348b33c1d9
+      internalID: -187383821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 190
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2711c8d16714448978b3cc3ab98759
+      internalID: -1180663887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 190
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e810dc23c1ad27748a614246e9a6626e
+      internalID: -1602214244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 190
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4401ed9a9af06ca42abf8579e30e0943
+      internalID: -1780732703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 180
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b064f99b713b0af4f92cf1923ed4d437
+      internalID: -1968667624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 180
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82147474ddeafea4297ef1986b4479d0
+      internalID: -668217647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 180
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce9da68aafe22849a4ed726e1005802
+      internalID: -266343562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_8
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 180
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210b6cbd9a2adef4ebe80d41357cbaba
+      internalID: -597945514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_9
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 180
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57f444ecb5c6de43aa22843dc9ce28a
+      internalID: 190054810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57173d0255571674c9e6c8c0313e9859
+      internalID: 1244584123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_11
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 170
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a772895cacafa4e8e0748c5c6d8631
+      internalID: -726142266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 170
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c8a521326ae6546b4684022c3df457
+      internalID: -868510200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_13
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 170
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5409ae0aaed4c6847882877e0cbc92a5
+      internalID: 2051574280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 170
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cc5a41eabbe944ea8289a7f82cc5c3
+      internalID: -1334417490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 160
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a167c2cd70bcd4d9cdcdd1f5fedbd2
+      internalID: 86221956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_16
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 160
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112a77d167283124aa57e2d6bf845d12
+      internalID: 34574394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 160
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43591b6edad62684782b204de93491f8
+      internalID: -1254241196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 160
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bec81a3d504ab46942e0baeb13968f
+      internalID: 1781911541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_19
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 160
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efbd46e6b354c240877c4a88112cb8c
+      internalID: -505442070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b86453d3c013ad46967057e93e2501d
+      internalID: -1848869303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_21
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35bcfbdb05b19840b6677a97783d169
+      internalID: 1526001816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_22
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba7be236f994854e9599abd767766d5
+      internalID: -1623153988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_23
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336d1c4ea94db7f43acdfcd9789a5190
+      internalID: -1957101819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_24
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5f2277a673ac74ca26c4dd782d3ae8
+      internalID: 1181031891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350534ac626f52a4195ea28a6d17e699
+      internalID: 875140362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525f34c73bc84034882edaae73a33e01
+      internalID: 1840180109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_27
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87339c3d4cf9b444fbe01c2c98f1a187
+      internalID: -1267860610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_28
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4ea3c1c2c15e844b8acf91da70e9a1
+      internalID: 1388325241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_29
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 140
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57c38a12fbf58441b27692156e46719
+      internalID: -1198306039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0247fa2d044991e43a8e91cb878f648b
+      internalID: 347297311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_31
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd9bd39122666e4da1115c189706a67
+      internalID: 307448700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_32
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa381a0d63769341bbb507496bb2fd1
+      internalID: 1589974883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_33
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234f08b0a62258d4f83a7831df257ddb
+      internalID: 1646099806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_34
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957bf58e3ca64d14db07304a82edae32
+      internalID: -402035265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_35
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2391e67c05b3f1f48bc0eaa21e620e7f
+      internalID: -1026469821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_36
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c951881750a6f41aebb050012b3e1b
+      internalID: 1457032603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_37
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0998494c3bd1b449d4871517545871
+      internalID: 1040673102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_38
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1b67da0e574e54a90b5d0e0ef92c3c
+      internalID: 1098384478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_39
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 120
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c12c4f213ae564982addeb28198a07
+      internalID: -271009415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06a25d4d6e9e2d4bb0738cdd3786288
+      internalID: -1982509072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_41
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddaf4be4e43aed4439f66848dc2a1754
+      internalID: -724395403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_42
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a23a17a464cf7046bf50199a78763be
+      internalID: 1240965236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_43
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e647fe0c4a8b6144acb24eab2e9fce9
+      internalID: -552543353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_44
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10d18508c10de0488428aa77c0124eb
+      internalID: 1434355285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_45
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 90
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b44480c52a03742a27dea4177d52a7
+      internalID: 224242760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_46
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 90
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bca3dd5ff030f64798ee9fa38edfb7d
+      internalID: 1393559700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_47
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 90
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096becc5d484afb42af690189ab1278e
+      internalID: -1210848074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_48
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 90
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8505fe68adc314981e092e51e477f5
+      internalID: 1702477630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_49
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270f4849960193c4bb9a27f5f2b8d396
+      internalID: -1210938781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14492521be68e414fbb2e7268f8e2a80
+      internalID: 98063461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_51
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 70
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b9356caf21ad241a804b944d917c35
+      internalID: 1994459522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_52
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 70
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be059d7e1b3a08419a3c7a08b5cf12a
+      internalID: 1899747397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_53
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 70
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9370a8bfc01424e8603776dd911146
+      internalID: -1322624592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_54
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 70
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c66bec5d7f28342b39850f03018cc1
+      internalID: -644002742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_55
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 60
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b11eed4f24e9eb40bdf9e862a812ddc
+      internalID: -1337365272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_56
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 60
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309fbc4aa4989bf4f904dc333174d8ab
+      internalID: -1051696627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_57
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 60
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6851f15ed00ba45b9a04c3226bceb9
+      internalID: -1564584071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_58
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 60
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2141fea90d37db64badd1d6ec3850077
+      internalID: -1369724359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_59
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 60
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481d99bf8d73d2b4fbe8f21b092c31c0
+      internalID: -1143834633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8946109196bf5d848be790b17e232055
+      internalID: -404914426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_61
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2dd4a166a455f41a69b2d8a6f2f893
+      internalID: 1864856582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_62
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4929a14aaa199b248831f296f8866ba2
+      internalID: 144914121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_63
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd8a1a14c75d2f478bf050fca777e58
+      internalID: -1035838754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_64
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b693f52ff21a86c4fa29052d583352f3
+      internalID: -584393306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_65
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 30
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c83eef984804e42ace68c64170f300
+      internalID: 592221858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_66
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 30
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b10241bf5066140ade5e99a5c275d7
+      internalID: 798827825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_67
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 30
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a7c8a90f7a8634fbee15bba0dcbb5b
+      internalID: -381840503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_68
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 30
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20523cacf7583af4dab65e9834a56378
+      internalID: 1232983775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_69
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 30
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e567310ed7c693b41aebbbfda4c73606
+      internalID: -237546612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3680a8dd39dcbb40b5c31e3186fa38d
+      internalID: -1054564446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_71
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8d617325b1a6b4fbbb8a96e1f7d7d1
+      internalID: 1856497952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_72
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285f3fa15bd05d445837fc9e8e8ac760
+      internalID: -796207418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_73
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2831d55eebb8f4db0091cc57f7b4d3
+      internalID: 15721535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_74
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c36ab4d19afd246a731b1fe0565649
+      internalID: 497179369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_75
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c991f84688021240a583eace5ec38de
+      internalID: -684161802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_76
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 10
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0be81c27cda964ba99b868a645a12e
+      internalID: 1310978155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_77
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 10
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7d9ce93ab973440afb9f004fc5dde4
+      internalID: 1765271189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_78
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 10
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cc5d57f60050845b4ca6fec60f3837
+      internalID: 1008962669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_79
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 10
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b082e8099babe50468818925bca4d2b3
+      internalID: -168621933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c450566980dd784daf0e96c5c234ffc
+      internalID: 623710824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_81
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0ef8cb839aa0548b477373f4d11d12
+      internalID: 1302875629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_82
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50f9aba5e81fb5479ece3a4e38de6d7
+      internalID: -881196193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_83
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bf493c8b8b9fe4ba360ca89e114307
+      internalID: -1882506587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing-no-bg_84
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10374f1bfc7b1614ab5df1aeebac025c
+      internalID: -2023535138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Clothing-no-bg_0: 1663986554
+      Clothing-no-bg_1: -187383821
+      Clothing-no-bg_10: 1244584123
+      Clothing-no-bg_11: -726142266
+      Clothing-no-bg_12: -868510200
+      Clothing-no-bg_13: 2051574280
+      Clothing-no-bg_14: -1334417490
+      Clothing-no-bg_15: 86221956
+      Clothing-no-bg_16: 34574394
+      Clothing-no-bg_17: -1254241196
+      Clothing-no-bg_18: 1781911541
+      Clothing-no-bg_19: -505442070
+      Clothing-no-bg_2: -1180663887
+      Clothing-no-bg_20: -1848869303
+      Clothing-no-bg_21: 1526001816
+      Clothing-no-bg_22: -1623153988
+      Clothing-no-bg_23: -1957101819
+      Clothing-no-bg_24: 1181031891
+      Clothing-no-bg_25: 875140362
+      Clothing-no-bg_26: 1840180109
+      Clothing-no-bg_27: -1267860610
+      Clothing-no-bg_28: 1388325241
+      Clothing-no-bg_29: -1198306039
+      Clothing-no-bg_3: -1602214244
+      Clothing-no-bg_30: 347297311
+      Clothing-no-bg_31: 307448700
+      Clothing-no-bg_32: 1589974883
+      Clothing-no-bg_33: 1646099806
+      Clothing-no-bg_34: -402035265
+      Clothing-no-bg_35: -1026469821
+      Clothing-no-bg_36: 1457032603
+      Clothing-no-bg_37: 1040673102
+      Clothing-no-bg_38: 1098384478
+      Clothing-no-bg_39: -271009415
+      Clothing-no-bg_4: -1780732703
+      Clothing-no-bg_40: -1982509072
+      Clothing-no-bg_41: -724395403
+      Clothing-no-bg_42: 1240965236
+      Clothing-no-bg_43: -552543353
+      Clothing-no-bg_44: 1434355285
+      Clothing-no-bg_45: 224242760
+      Clothing-no-bg_46: 1393559700
+      Clothing-no-bg_47: -1210848074
+      Clothing-no-bg_48: 1702477630
+      Clothing-no-bg_49: -1210938781
+      Clothing-no-bg_5: -1968667624
+      Clothing-no-bg_50: 98063461
+      Clothing-no-bg_51: 1994459522
+      Clothing-no-bg_52: 1899747397
+      Clothing-no-bg_53: -1322624592
+      Clothing-no-bg_54: -644002742
+      Clothing-no-bg_55: -1337365272
+      Clothing-no-bg_56: -1051696627
+      Clothing-no-bg_57: -1564584071
+      Clothing-no-bg_58: -1369724359
+      Clothing-no-bg_59: -1143834633
+      Clothing-no-bg_6: -668217647
+      Clothing-no-bg_60: -404914426
+      Clothing-no-bg_61: 1864856582
+      Clothing-no-bg_62: 144914121
+      Clothing-no-bg_63: -1035838754
+      Clothing-no-bg_64: -584393306
+      Clothing-no-bg_65: 592221858
+      Clothing-no-bg_66: 798827825
+      Clothing-no-bg_67: -381840503
+      Clothing-no-bg_68: 1232983775
+      Clothing-no-bg_69: -237546612
+      Clothing-no-bg_7: -266343562
+      Clothing-no-bg_70: -1054564446
+      Clothing-no-bg_71: 1856497952
+      Clothing-no-bg_72: -796207418
+      Clothing-no-bg_73: 15721535
+      Clothing-no-bg_74: 497179369
+      Clothing-no-bg_75: -684161802
+      Clothing-no-bg_76: 1310978155
+      Clothing-no-bg_77: 1765271189
+      Clothing-no-bg_78: 1008962669
+      Clothing-no-bg_79: -168621933
+      Clothing-no-bg_8: -597945514
+      Clothing-no-bg_80: 623710824
+      Clothing-no-bg_81: 1302875629
+      Clothing-no-bg_82: -881196193
+      Clothing-no-bg_83: -1882506587
+      Clothing-no-bg_84: -2023535138
+      Clothing-no-bg_9: 190054810
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
