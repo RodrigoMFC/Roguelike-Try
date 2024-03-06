@@ -66,7 +66,7 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
     private bool IsValidPosition(Vector3 futurePosition)
     {
         Vector3Int gridPosition = MapManager.instance.FloorMap.WorldToCell(futurePosition);
-        if (!MapManager.instance.InBounds(gridPosition.x, gridPosition.y) || MapManager.instance.ObstacleMap.HasTile(gridPosition) || futurePosition == transform.position)
+        if (!MapManager.instance.InBounds(gridPosition.x, gridPosition.y) || !MapManager.instance.FloorMap.HasTile(gridPosition) || futurePosition == transform.position)
             return false;
 
         return true;
