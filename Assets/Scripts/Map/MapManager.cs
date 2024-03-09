@@ -16,26 +16,22 @@ public class MapManager : MonoBehaviour
 
     [Header("Tiles")]
     [SerializeField] private TileBase floorTile;
-    [SerializeField] private TileBase wallTile;
     [SerializeField] private TileBase fogTile;
 
     [Header("Tilemaps")]
     [SerializeField] private Tilemap floorMap;
-    [SerializeField] private Tilemap obstacleMap;
     [SerializeField] private Tilemap fogMap;
 
     [Header("Features")]
     [SerializeField] private List<RectangularRoom> rooms = new List<RectangularRoom>();
     [SerializeField] private List<Vector3Int> visibleTiles = new List<Vector3Int>();
-    private Dictionary<Vector3Int, TileData> tiles = new Dictionary<Vector3Int, TileData>();
+    [SerializeField] private Dictionary<Vector3Int, TileData> tiles = new Dictionary<Vector3Int, TileData>();
     private Dictionary<Vector2Int, Node> nodes = new Dictionary<Vector2Int, Node>();
 
     public int Width { get => width; }
     public int Height { get => height; }
     public TileBase FloorTile { get => floorTile; }
-    public TileBase WallTile { get => wallTile; }
     public Tilemap FloorMap { get => floorMap; }
-    public Tilemap ObstacleMap { get => floorMap; }
     public Tilemap FogMap { get => fogMap; }
     public Dictionary<Vector2Int, Node> Nodes { get => nodes; set => nodes = value; }
 
@@ -57,7 +53,6 @@ public class MapManager : MonoBehaviour
         procGen.GenerateDungeon(width, height, roomMaxSize, roomMinSize, maxRooms, maxMonstersPerRoom, rooms);
 
         AddTileMapToDictionary(floorMap);
-        AddTileMapToDictionary(obstacleMap);
 
         SetupFogMap();
 
@@ -151,7 +146,7 @@ public class MapManager : MonoBehaviour
         foreach (Vector3Int pos in tiles.Keys)
         {
             fogMap.SetTile(pos, fogTile);
-            //fogMap.SetTileFlags(pos, TileFlags.None);
+            fogMap.SetTileFlags(pos, TileFlags.None);
         }
     }
 }

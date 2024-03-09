@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Actor))]
@@ -69,6 +70,14 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
         if (!MapManager.instance.InBounds(gridPosition.x, gridPosition.y) || !MapManager.instance.FloorMap.HasTile(gridPosition) || futurePosition == transform.position)
             return false;
 
-        return true;
+        return
+            // In bounds of the known maximum coordinates
+            MapManager.instance.InBounds(gridPosition.x, gridPosition.y)
+            // FloorMap has a tile there
+         && MapManager.instance.FloorMap.HasTile(gridPosition)
+            // There's no collision for the future position (aka is ground)
+         && MapManager.instance.FloorMap.GetColliderType(gridPosition) == Tile.ColliderType.None
+            // We actually move to a new position
+         && futurePosition != transform.position;
     }
 }

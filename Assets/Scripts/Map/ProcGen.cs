@@ -111,17 +111,13 @@ sealed class ProcGen
         }
         else
         {
-            MapManager.instance.ObstacleMap.SetTile(pos, MapManager.instance.WallTile);
+            MapManager.instance.FloorMap.SetTile(pos, MapManager.instance.FloorTile);
             return false;
         }
     }
 
     private void SetFloorTile(Vector3Int pos)
     {
-        if (MapManager.instance.ObstacleMap.GetTile(pos))
-        {
-            MapManager.instance.ObstacleMap.SetTile(pos, null);
-        }
         MapManager.instance.FloorMap.SetTile(pos, MapManager.instance.FloorTile);
     }
 
