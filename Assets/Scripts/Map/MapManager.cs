@@ -86,15 +86,16 @@ public class MapManager : MonoBehaviour
 
     public void UpdateFogMap(List<Vector3Int> playerFOV)
     {
-        foreach (Vector3Int pos in visibleTiles)
+        foreach (Vector3Int pos in tiles.Keys)
         {
             if (!tiles[pos].IsExplored)
             {
                 tiles[pos].IsExplored = true;
+                tiles[pos].IsVisible = false;
+                fogMap.SetColor(pos, new Color(1.0f, 1.0f, 1.0f, 0.5f));
             }
 
-            tiles[pos].IsVisible = false;
-            fogMap.SetColor(pos, new Color(1.0f, 1.0f, 1.0f, 0.5f));
+            
         }
 
         visibleTiles.Clear();
