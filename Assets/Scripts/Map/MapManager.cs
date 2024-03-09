@@ -56,8 +56,6 @@ public class MapManager : MonoBehaviour
 
         SetupFogMap();
 
-        Camera.main.transform.position = new Vector3(40, 20.25f, -10);
-        Camera.main.orthographicSize = 27;
     }
 
     ///<summary>Return True if x and y are inside of the bounds of this map. </summary>
@@ -68,7 +66,11 @@ public class MapManager : MonoBehaviour
         switch (entity)
         {
             case "Player":
-                Instantiate(Resources.Load<GameObject>("Player"), new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Player";
+                GameObject playerObject = Instantiate(Resources.Load<GameObject>("Player"), new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity);
+                playerObject.name = "Player";
+                Transform playerTransform = playerObject.transform;
+                CameraTracker cameraTracker = FindObjectOfType<CameraTracker>();
+                cameraTracker.SetTarget(playerTransform);
                 break;
             case "Imp":
                 Instantiate(Resources.Load<GameObject>("Imp"), new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Imp";
