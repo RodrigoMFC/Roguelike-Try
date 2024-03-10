@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16c68796844654942b6e55a8db7cd058
+guid: fbfac624f9a981d4f8030b63d85b78a5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: grassspritesVariants_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 19.333334
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c497c23faa20274a94257c3a7719e2b
+      internalID: -121087173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassspritesVariants_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 19.333334
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85a06a8acc46d7448fdbe1b88a47b62
+      internalID: -1146167883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grassspritesVariants_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 19.333334
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d960b422e15c74eb2a361bf0454f56
+      internalID: -821664145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +169,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grassspritesVariants_0: -121087173
+      grassspritesVariants_1: -1146167883
+      grassspritesVariants_2: -821664145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

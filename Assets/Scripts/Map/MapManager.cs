@@ -20,7 +20,6 @@ public class MapManager : MonoBehaviour
 
     [Header("Objects")]
     [SerializeField] private TileBase crateTile;
-    [SerializeField] private TileBase grassTile;
     [SerializeField] private TileBase torchTile;
     [SerializeField] private TileBase torchBaseTile;
 
@@ -28,6 +27,14 @@ public class MapManager : MonoBehaviour
     [SerializeField] private Tilemap floorMap;
     [SerializeField] private Tilemap fogMap;
     [SerializeField] private Tilemap objectsMap;
+
+    [Header("Grass")]
+    [SerializeField] private TileBase grassTile1;
+    [SerializeField] private TileBase grassTile2;
+    [SerializeField] private TileBase grassTile3;
+    [SerializeField] private TileBase grassTile4;
+    [SerializeField] private TileBase grassTile5;
+    private TileBase[] grassTiles;
 
     [Header("Features")]
     [SerializeField] private List<RectangularRoom> rooms = new List<RectangularRoom>();
@@ -43,7 +50,11 @@ public class MapManager : MonoBehaviour
     public int Width { get => width; }
     public int Height { get => height; }
     public TileBase FloorTile { get => floorTile; }
-    public TileBase GrassTile { get => grassTile; }
+    public TileBase GrassTile1 { get => grassTile1; }
+    public TileBase GrassTile2 { get => grassTile2; }
+    public TileBase GrassTile3 { get => grassTile3; }
+    public TileBase GrassTile4 { get => grassTile2; }
+    public TileBase GrassTile5 { get => grassTile3; }
     public TileBase CrateTile { get => crateTile; }
     public TileBase TorchTile { get => torchTile; }
     public TileBase TorchBaseTile { get => torchBaseTile; }
@@ -70,6 +81,8 @@ public class MapManager : MonoBehaviour
 
     private void Start()
     {
+        grassTiles = new TileBase[] { grassTile1, grassTile2, grassTile3 , grassTile4, grassTile5};
+
         ProcGen procGen = new ProcGen();
         procGen.GenerateDungeon(width, height, roomMaxSize, roomMinSize, maxRooms, maxMonstersPerRoom, rooms);
 
@@ -102,8 +115,8 @@ public class MapManager : MonoBehaviour
             case "Grass":
                 Vector3Int tilePos = new Vector3Int((int)position.x, (int)position.y, 0);
                 if (floorMap.HasTile(tilePos) && floorMap.GetColliderType(tilePos) == Tile.ColliderType.None)
-                { 
-                    objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), grassTile);
+                {
+                    objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), grassTiles[Random.Range(0, grassTiles.Length)]); // Get a random index
                 }
                 break;
             default:
