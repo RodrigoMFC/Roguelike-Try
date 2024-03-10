@@ -5,9 +5,9 @@ using UnityEngine;
 public class GhostAbility : MonoBehaviour
 {
     private Vector3 previousPosition;
-    public bool ghostAbilityAvailable = false;
-    public int tilesMoved = 0;
-    public int turnsLeft = 4;
+   [SerializeField] private bool ghostAbilityAvailable = false;
+    [SerializeField] private int tilesMoved = 0;
+    [SerializeField] private int turnsLeft = 4;
     public bool GhostAbilityAvailable
     {
         get => ghostAbilityAvailable;
@@ -27,6 +27,8 @@ public class GhostAbility : MonoBehaviour
     {  
         HasPlayerMoved();
         resetMovementCounter();
+        useGhostAbility();
+       
     }
 
     bool HasPlayerMoved(){
@@ -45,4 +47,15 @@ public class GhostAbility : MonoBehaviour
         if(tilesMoved > turnsLeft ) tilesMoved = 0;
         return;
     }
+
+    // space is pressed
+    // player turn speed = 4 
+    // enemy turn speed = 1
+    public void useGhostAbility(){
+            if (Input.GetKeyDown(KeyCode.Space)) ghostAbilityAvailable = !ghostAbilityAvailable;
+            if(ghostAbilityAvailable){
+
+        }
+    }
 }
+
