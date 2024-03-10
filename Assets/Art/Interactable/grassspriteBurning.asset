@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: grass_variant3
+  m_Name: grassspriteBurning
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -821664145, guid: fbfac624f9a981d4f8030b63d85b78a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea5df628ec080bfcc8a3911741fc8470, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

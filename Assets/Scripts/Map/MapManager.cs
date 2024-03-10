@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -20,13 +21,16 @@ public class MapManager : MonoBehaviour
 
     [Header("Objects")]
     [SerializeField] private TileBase crateTile;
+    [SerializeField] private TileBase grassFireTile;
     [SerializeField] private TileBase torchTile;
     [SerializeField] private TileBase torchBaseTile;
+    [SerializeField] private TileBase ladderTile;
 
     [Header("Tilemaps")]
     [SerializeField] private Tilemap floorMap;
     [SerializeField] private Tilemap fogMap;
     [SerializeField] private Tilemap objectsMap;
+    [SerializeField] private Tilemap torchMap;
 
     [Header("Grass")]
     [SerializeField] private TileBase grassTile1;
@@ -66,6 +70,8 @@ public class MapManager : MonoBehaviour
 
     public Dictionary<Vector2Int, Node> Nodes { get => nodes; set => nodes = value; }
 
+    Dictionary<Vector3Int, int> fireTileLifetime = new();
+
     public SpriteRenderer noiseVis;
 
     private void Awake()
@@ -90,7 +96,50 @@ public class MapManager : MonoBehaviour
         AddTileMapToDictionary(floorMap);
 
         SetupFogMap();
+        GameManager.instance.turnStart += TurnStart;
+    }
 
+    private void TurnStart() {
+        HashSet<Vector3Int> affectedTilesThisTurn = new();
+
+        foreach (Vector3Int pos in objectsMap.cellBounds.allPositionsWithin)
+        {
+            if (affectedTilesThisTurn.Contains(pos) || !objectsMap.HasTile(pos))
+            {
+                continue;
+            }
+
+            TileBase tile = objectsMap.GetTile(pos);
+            if (tile == grassFireTile)
+            {
+                Vector3Int[] positions = new Vector3Int[4] {
+                    //new Vector3Int(pos.x + 1, pos.y + 1, pos.z),
+                    new Vector3Int(pos.x, pos.y + 1, pos.z),
+                    //new Vector3Int(pos.x - 1, pos.y + 1, pos.z),
+                    new Vector3Int(pos.x + 1, pos.y, pos.z),
+                    new Vector3Int(pos.x - 1, pos.y, pos.z),
+                    //new Vector3Int(pos.x + 1, pos.y - 1, pos.z),
+                    new Vector3Int(pos.x, pos.y - 1, pos.z),
+                    //new Vector3Int(pos.x - 1, pos.y - 1, pos.z)
+                };
+                foreach (Vector3Int position in positions)
+                {
+                    if (objectsMap.HasTile(position) && grassTiles.Contains(objectsMap.GetTile(position)))
+                    {
+                        objectsMap.SetTile(position, grassFireTile);
+                        affectedTilesThisTurn.Add(position);
+                    }
+                }
+                if (!fireTileLifetime.ContainsKey(pos)) {
+                    fireTileLifetime.Add(pos, 0);
+                } else if (fireTileLifetime[pos] > 4) {
+                    objectsMap.SetTile(pos, null);
+                    fireTileLifetime.Remove(pos);
+                } else {
+                    fireTileLifetime[pos]++;
+                }
+            }
+        }
     }
 
     ///<summary>Return True if x and y are inside of the bounds of this map. </summary>
@@ -122,9 +171,12 @@ public class MapManager : MonoBehaviour
             case "Grass":
                 Vector3Int tilePos = new Vector3Int((int)position.x, (int)position.y, 0);
                 if (floorMap.HasTile(tilePos) && floorMap.GetColliderType(tilePos) == Tile.ColliderType.None)
-                {
+                { 
                     objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), grassTiles[Random.Range(0, grassTiles.Length)]); // Get a random index
                 }
+                break;
+            case "Torch":
+                torchMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), torchTile);
                 break;
             default:
                 Debug.LogError("Entity not found");

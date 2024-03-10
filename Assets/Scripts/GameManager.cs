@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +25,8 @@ public class GameManager : MonoBehaviour
     public List<Actor> Actors { get => actors; }
     public Sprite DeadSprite { get => deadSprite; }
 
+    public UnityAction turnStart;
+
     private void Awake()
     {
         if (instance == null)
@@ -41,6 +45,7 @@ public class GameManager : MonoBehaviour
         if (actors[actorNum].GetComponent<Player>())
         {
             isPlayerTurn = true;
+            turnStart?.Invoke();
         }
         else
         {
