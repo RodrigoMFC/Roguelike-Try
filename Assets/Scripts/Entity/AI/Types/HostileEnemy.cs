@@ -5,6 +5,12 @@ public class HostileEnemy : AI
 {
     [SerializeField] private Fighter fighter;
     [SerializeField] private bool isFighting;
+    private SpriteController spriteController;
+
+    private void Start()
+    {
+        spriteController = GetComponentInChildren<SpriteController>();
+    }
 
     private void OnValidate()
     {
@@ -43,6 +49,8 @@ public class HostileEnemy : AI
                 else
                 { //If not in range, move towards target
                     MoveAlongPath(targetPosition);
+                    // update facing direction of sprite 
+                    spriteController.SetSprite(facingDirection);
                     return;
                 }
             }

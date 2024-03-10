@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject messageHistory;
     [SerializeField] private GameObject messageHistoryContent;
     [SerializeField] private GameObject lastFiveMessagesContent;
+    [SerializeField] private TextMeshProUGUI messagePrefab;
 
     public bool IsMessageHistoryOpen { get => isMessageHistoryOpen; }
 
@@ -50,13 +51,12 @@ public class UIManager : MonoBehaviour
 
     public void AddMessage(string newMessage, string colorHex)
     {
-
         lastMessage = newMessage;
 
-        TextMeshProUGUI messagePrefab = Instantiate(Resources.Load<TextMeshProUGUI>("Message")) as TextMeshProUGUI;
-        messagePrefab.text = newMessage;
-        messagePrefab.color = Color.white;
-        messagePrefab.transform.SetParent(messageHistoryContent.transform, false);
+        TextMeshProUGUI message = Instantiate(messagePrefab) as TextMeshProUGUI;
+        message.text = newMessage;
+        message.color = Color.white;
+        message.transform.SetParent(messageHistoryContent.transform, false);
 
         for (int i = 0; i < lastFiveMessagesContent.transform.childCount; i++)
         {

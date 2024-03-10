@@ -28,6 +28,11 @@ public class MapManager : MonoBehaviour
     [SerializeField] private Dictionary<Vector3Int, TileData> tiles = new Dictionary<Vector3Int, TileData>();
     private Dictionary<Vector2Int, Node> nodes = new Dictionary<Vector2Int, Node>();
 
+    [Header("Entities")]
+    [SerializeField] private GameObject goblin;
+    [SerializeField] private GameObject imp;
+    [SerializeField] private GameObject player;
+
     public int Width { get => width; }
     public int Height { get => height; }
     public TileBase FloorTile { get => floorTile; }
@@ -66,17 +71,17 @@ public class MapManager : MonoBehaviour
         switch (entity)
         {
             case "Player":
-                GameObject playerObject = Instantiate(Resources.Load<GameObject>("Player"), new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity);
+                GameObject playerObject = Instantiate(player, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity);
                 playerObject.name = "Player";
                 Transform playerTransform = playerObject.transform;
                 CameraTracker cameraTracker = FindObjectOfType<CameraTracker>();
                 cameraTracker.SetTarget(playerTransform);
                 break;
             case "Imp":
-                Instantiate(Resources.Load<GameObject>("Imp"), new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Imp";
+                Instantiate(imp, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Imp";
                 break;
             case "Goblin":
-                Instantiate(Resources.Load<GameObject>("Goblin"), new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Goblin";
+                Instantiate(goblin, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Goblin";
                 break;
             default:
                 Debug.LogError("Entity not found");
@@ -121,11 +126,11 @@ public class MapManager : MonoBehaviour
 
             if (visibleTiles.Contains(entityPosition))
             {
-                entity.GetComponent<SpriteRenderer>().enabled = true;
+                entity.GetComponentInChildren<SpriteRenderer>().enabled = true;
             }
             else
             {
-                entity.GetComponent<SpriteRenderer>().enabled = false;
+                entity.GetComponentInChildren<SpriteRenderer>().enabled = false;
             }
         }
     }

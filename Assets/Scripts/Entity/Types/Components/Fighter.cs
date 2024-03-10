@@ -46,7 +46,7 @@ sealed class Fighter : MonoBehaviour
             UIManager.instance.AddMessage($"{name} morreu!", "#ffa500"); //Light Orange
         }
 
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         spriteRenderer.sprite = GameManager.instance.DeadSprite;
         spriteRenderer.color = new Color(191, 0, 0, 1);
         spriteRenderer.sortingOrder = 0;

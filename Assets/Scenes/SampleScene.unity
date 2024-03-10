@@ -476,7 +476,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -520,6 +520,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FollowSpeed: 2
+  followSpeed: 2
+  aspectRatioHeight: 9
+  aspectRatioWidth: 16
+  pixelsPerUnit: 16
+  pixelSnapping: 0
 --- !u!1 &557110809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,8 +2939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 80
   height: 45
-  roomMaxSize: 10
-  roomMinSize: 6
+  roomMaxSize: 20
+  roomMinSize: 15
   maxRooms: 30
   maxMonstersPerRoom: 2
   floorTile: {fileID: 11400000, guid: ac6cd14b5e0e142f39c1933918a531b8, type: 2}
@@ -2944,6 +2949,9 @@ MonoBehaviour:
   fogMap: {fileID: 178230987}
   rooms: []
   visibleTiles: []
+  goblin: {fileID: 7877747119792723987, guid: f0eafb0ed5c1fe54482cd89228b0feb3, type: 3}
+  imp: {fileID: 7877747119792723987, guid: 0a8f0099318981a4bbfdbc252fba31e4, type: 3}
+  player: {fileID: 5746121207968234823, guid: 64987873950549e43b80b2b02be4d7c0, type: 3}
 --- !u!156049354 &1341872666
 Grid:
   m_ObjectHideFlags: 0
@@ -3071,7 +3079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 875848614448606535, guid: 6df33fdf813240e45bc1f0db140a5371, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 35.01
+      value: 35.009995
       objectReference: {fileID: 0}
     - target: {fileID: 1302844297019201087, guid: 6df33fdf813240e45bc1f0db140a5371, type: 3}
       propertyPath: m_Pivot.x
@@ -3317,6 +3325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6388832211643167899, guid: 6df33fdf813240e45bc1f0db140a5371, type: 3}
+      propertyPath: messagePrefab
+      value: 
+      objectReference: {fileID: 5339477004504906683, guid: 13f424f032041f04e9ad75311f5e6d02, type: 3}
     - target: {fileID: 6471346343942395243, guid: 6df33fdf813240e45bc1f0db140a5371, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 844

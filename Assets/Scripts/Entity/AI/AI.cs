@@ -4,6 +4,7 @@ using UnityEngine;
 public class AI : MonoBehaviour
 {
     [SerializeField] private AStar aStar;
+    public Vector2 facingDirection;
 
     public AStar AStar { get => aStar; set => aStar = value; }
 
@@ -13,6 +14,8 @@ public class AI : MonoBehaviour
     {
         Vector3Int gridPosition = MapManager.instance.FloorMap.WorldToCell(transform.position);
         Vector2 direction = aStar.Compute((Vector2Int)gridPosition, (Vector2Int)targetPosition);
+        facingDirection = direction;
         Action.MovementAction(GetComponent<Actor>(), direction);
     }
+
 }

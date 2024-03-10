@@ -6,11 +6,16 @@ using UnityEngine.InputSystem;
 sealed class Player : MonoBehaviour, Controls.IPlayerActions
 {
     private Controls controls;
+    private SpriteController spriteController;
 
     [SerializeField] private bool moveKeyHeld; //read-only
 
     private void Awake() => controls = new Controls();
 
+    private void Start()
+    {
+        spriteController = GetComponentInChildren<SpriteController>();
+    }
     private void OnEnable()
     {
         controls.Player.SetCallbacks(this);
@@ -59,6 +64,7 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
         Vector2 direction = controls.Player.Movement.ReadValue<Vector2>();
         Vector2 roundedDirection = new Vector2(Mathf.Round(direction.x), Mathf.Round(direction.y));
         Vector3 futurePosition = transform.position + (Vector3)roundedDirection;
+        spriteController.SetSprite(roundedDirection);
 
         if (IsValidPosition(futurePosition))
             moveKeyHeld = Action.BumpAction(GetComponent<Actor>(), roundedDirection); //If we bump into an entity, moveKeyHeld is set to false.
