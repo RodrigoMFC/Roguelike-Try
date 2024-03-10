@@ -709,6 +709,7 @@ MonoBehaviour:
   fogTile: {fileID: 11400000, guid: 412042efd0a339545a4785702217cb97, type: 2}
   crateTile: {fileID: 0}
   grassTile: {fileID: 11400000, guid: e736798dc56a232769f464e611a118de, type: 2}
+  grassFireTile: {fileID: 11400000, guid: 7e5b0301601473802801faaf456c1253, type: 2}
   torchTile: {fileID: 0}
   torchBaseTile: {fileID: 0}
   floorMap: {fileID: 557110810}
