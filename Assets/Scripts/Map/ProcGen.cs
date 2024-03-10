@@ -58,6 +58,7 @@ sealed class ProcGen
         }
         //The first room, where the player starts.
         MapManager.instance.CreateEntity("Player", rooms[0].Center());
+        MapManager.instance.CreateEntity("Ghost", rooms[0].Center());
     }
 
     /// <summary>

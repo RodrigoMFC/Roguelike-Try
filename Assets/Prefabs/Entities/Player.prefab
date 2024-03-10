@@ -200,3 +200,4 @@ MonoBehaviour:
   ghostAbilityAvailable: 0
   tilesMoved: 0
   turnsLeft: 4
+  ghost: {fileID: 3932907878434868757, guid: cf9b2a7779e4a0141bcfde1ef2d22aef, type: 3}

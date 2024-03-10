@@ -46,6 +46,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private GameObject goblin;
     [SerializeField] private GameObject imp;
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject ghost;
 
     public int Width { get => width; }
     public int Height { get => height; }
@@ -105,6 +106,12 @@ public class MapManager : MonoBehaviour
                 Transform playerTransform = playerObject.transform;
                 CameraTracker cameraTracker = FindObjectOfType<CameraTracker>();
                 cameraTracker.SetTarget(playerTransform);
+                break;
+            case "Ghost":
+                GameObject ghostObject = Instantiate(ghost, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity);
+                ghostObject.name = "Ghost";
+                ghostObject.SetActive(false);
+                Transform ghostTransform = ghostObject.transform;  
                 break;
             case "Imp":
                 Instantiate(imp, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Imp";

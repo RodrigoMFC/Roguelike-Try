@@ -17,8 +17,9 @@ static public class Action
     {
         Actor target = GameManager.instance.GetBlockingActorAtLocation(actor.transform.position + (Vector3)direction);
 
-        if (target)
+        if (target && !target.GetComponent<Player>()) 
         {
+
             MeleeAction(actor, target);
             return false;
         }
