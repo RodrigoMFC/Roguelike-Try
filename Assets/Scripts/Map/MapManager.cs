@@ -22,6 +22,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private TileBase crateTile;
     [SerializeField] private TileBase torchTile;
     [SerializeField] private TileBase torchBaseTile;
+    [SerializeField] private TileBase ladderTile;
 
     [Header("Tilemaps")]
     [SerializeField] private Tilemap floorMap;
