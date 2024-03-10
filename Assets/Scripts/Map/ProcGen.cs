@@ -52,6 +52,7 @@ sealed class ProcGen
             }
 
             PlaceActors(newRoom, maxMonstersPerRoom);
+            PlaceObjects(newRoom);
 
             rooms.Add(newRoom);
         }
@@ -155,5 +156,42 @@ sealed class ProcGen
             }
             monster++;
         }
+    }
+
+    private void PlaceObjects(RectangularRoom newRoom)
+    {
+        // Generate pools of grass
+        // -X to take into account walls
+        RectInt rect = new RectInt(newRoom.X, newRoom.Y, newRoom.Width-3, newRoom.Height-3);
+        HashSet<Vector2Int> grassTiles = GeneratePools(rect, 3.0f, 0.3f, Random.Range(0, 100), Random.Range(0, 100));
+
+        foreach (Vector2Int tile in grassTiles)
+        {
+            MapManager.instance.CreateEntity("Grass", tile);
+        }
+    }
+
+    public HashSet<Vector2Int> GeneratePools(RectInt rect, float scale, float cutoff, float xOrg, float yOrg)
+    {
+        HashSet<Vector2Int> poolTiles = new HashSet<Vector2Int>();
+        // For each pixel in the texture...
+        for(int y = 0; y < 128; y++) {
+            for (int x = 0; x < 128; x++) {
+                float xCoord = xOrg + x / 128f * scale;
+                float yCoord = yOrg + y / 128f * scale;
+                float sample = Mathf.PerlinNoise(xCoord, yCoord);
+                if (sample < cutoff)
+                {
+                    Vector2Int tilePos = new Vector2Int(
+                        Mathf.RoundToInt(rect.x + (x / 128f) * rect.width),
+                        Mathf.RoundToInt(rect.y + (y / 128f) * rect.height)
+                    );
+                    poolTiles.Add(tilePos);
+                }
+            }
+        }
+
+        // Copy the pixel data to the texture and load it into the GPU.
+        return poolTiles;
     }
 }
