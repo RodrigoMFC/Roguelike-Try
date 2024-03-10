@@ -3,8 +3,10 @@ using UnityEngine.Tilemaps;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Actor))]
-sealed class Player : MonoBehaviour, Controls.IPlayerActions
+public class GhostMovement : MonoBehaviour, Controls.IPlayerActions
 {
+
+
     private Controls controls;
     private SpriteController spriteController;
 
@@ -14,10 +16,7 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
 
     private void Awake() => controls = new Controls();
 
-    private void Start()
-    {
-        spriteController = GetComponentInChildren<SpriteController>();
-    }
+
     private void OnEnable()
     {
         controls.Player.SetCallbacks(this);
@@ -54,10 +53,13 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
     {
         if (!UIManager.instance.IsMessageHistoryOpen)
         {
-            if (GameManager.instance.IsPlayerTurn && moveKeyHeld && GetComponent<Actor>().IsAlive && !GetComponent<GhostAbility>().GhostAbilityAvailable)
+           
+            if (GameManager.instance.IsPlayerTurn)/*moveKeyHeld && 
+                GetComponent<Actor>().IsAlive &&
+                GetComponent<GhostAbility>().GhostAbilityAvailable)*/
             {   
-                Debug.Log(!GetComponent<GhostAbility>().GhostAbilityAvailable);
-                MovePlayer();
+              //  Debug.Log(GetComponent<GhostAbility>().GhostAbilityAvailable);
+                MoveGhost();
             }
            
             
@@ -65,7 +67,7 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
         }
     }
 
-    private void MovePlayer()
+    private void MoveGhost()
     {
         Vector2 direction = controls.Player.Movement.ReadValue<Vector2>();
         Vector2 roundedDirection = new Vector2(Mathf.Round(direction.x), Mathf.Round(direction.y));
@@ -96,3 +98,4 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
          && futurePosition != transform.position;
     }
 }
+
