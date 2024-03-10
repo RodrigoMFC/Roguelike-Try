@@ -30,6 +30,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private Tilemap floorMap;
     [SerializeField] private Tilemap fogMap;
     [SerializeField] private Tilemap objectsMap;
+    [SerializeField] private Tilemap torchMap;
 
     [Header("Grass")]
     [SerializeField] private TileBase grassTile1;
@@ -110,15 +111,15 @@ public class MapManager : MonoBehaviour
             TileBase tile = objectsMap.GetTile(pos);
             if (tile == grassFireTile)
             {
-                Vector3Int[] positions = new Vector3Int[8] {
-                    new Vector3Int(pos.x + 1, pos.y + 1, pos.z),
+                Vector3Int[] positions = new Vector3Int[4] {
+                    //new Vector3Int(pos.x + 1, pos.y + 1, pos.z),
                     new Vector3Int(pos.x, pos.y + 1, pos.z),
-                    new Vector3Int(pos.x - 1, pos.y + 1, pos.z),
+                    //new Vector3Int(pos.x - 1, pos.y + 1, pos.z),
                     new Vector3Int(pos.x + 1, pos.y, pos.z),
                     new Vector3Int(pos.x - 1, pos.y, pos.z),
-                    new Vector3Int(pos.x + 1, pos.y - 1, pos.z),
+                    //new Vector3Int(pos.x + 1, pos.y - 1, pos.z),
                     new Vector3Int(pos.x, pos.y - 1, pos.z),
-                    new Vector3Int(pos.x - 1, pos.y - 1, pos.z)
+                    //new Vector3Int(pos.x - 1, pos.y - 1, pos.z)
                 };
                 foreach (Vector3Int position in positions)
                 {
@@ -164,8 +165,11 @@ public class MapManager : MonoBehaviour
                 Vector3Int tilePos = new Vector3Int((int)position.x, (int)position.y, 0);
                 if (floorMap.HasTile(tilePos) && floorMap.GetColliderType(tilePos) == Tile.ColliderType.None)
                 { 
-                    objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), Random.Range(0, 10) == 1 ? grassFireTile : grassTiles[Random.Range(0, grassTiles.Length)]); // Get a random index
+                    objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), grassTiles[Random.Range(0, grassTiles.Length)]); // Get a random index
                 }
+                break;
+            case "Torch":
+                torchMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), torchTile);
                 break;
             default:
                 Debug.LogError("Entity not found");

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: torch_animated_tile
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -1590608987, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
-  - {fileID: -1519115383, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
-  - {fileID: -807607195, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
-  - {fileID: 1082691538, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
-  - {fileID: -2049062419, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
-  - {fileID: 663186243, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
-  - {fileID: 336922561, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
-  - {fileID: -25060010, guid: aaa98bf8d077a2449978e6b951dea049, type: 3}
+  - {fileID: 875740029, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
+  - {fileID: -909653974, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
+  - {fileID: 1337728402, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
+  - {fileID: 1568732724, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
+  - {fileID: 697845181, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
+  - {fileID: -1092493007, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
+  - {fileID: 1773085943, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
+  - {fileID: -221594610, guid: c41f6c98ce5ec993dbdab61700b4d07e, type: 3}
   m_MinSpeed: 10
   m_MaxSpeed: 12
   m_AnimationStartTime: 0

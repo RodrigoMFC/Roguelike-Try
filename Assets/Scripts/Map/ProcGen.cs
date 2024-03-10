@@ -169,6 +169,23 @@ sealed class ProcGen
         {
             MapManager.instance.CreateEntity("Grass", tile);
         }
+
+        // Generate torches
+
+        int numberOfTorches = Mathf.Max(1, Mathf.CeilToInt((newRoom.Width + newRoom.Height) / 15));
+        HashSet<Vector2Int> torchesSpawned = new();
+
+        for (int i = 0; i < numberOfTorches; i++)
+        {
+            Vector2Int torchPos = new Vector2Int(Random.Range(newRoom.X+1, newRoom.X + newRoom.Width-5), Random.Range(newRoom.Y+1, newRoom.Y + newRoom.Height-5));
+            if (torchesSpawned.Contains(torchPos))
+            {
+                i--;
+                continue;
+            }
+            MapManager.instance.CreateEntity("Torch", torchPos);
+            torchesSpawned.Add(torchPos);
+        }
     }
 
     public HashSet<Vector2Int> GeneratePools(RectInt rect, float scale, float cutoff, float xOrg, float yOrg)
