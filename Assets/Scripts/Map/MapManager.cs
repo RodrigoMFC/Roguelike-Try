@@ -18,9 +18,16 @@ public class MapManager : MonoBehaviour
     [SerializeField] private TileBase floorTile;
     [SerializeField] private TileBase fogTile;
 
+    [Header("Objects")]
+    [SerializeField] private TileBase crateTile;
+    [SerializeField] private TileBase grassTile;
+    [SerializeField] private TileBase torchTile;
+    [SerializeField] private TileBase torchBaseTile;
+
     [Header("Tilemaps")]
     [SerializeField] private Tilemap floorMap;
     [SerializeField] private Tilemap fogMap;
+    [SerializeField] private Tilemap objectsMap;
 
     [Header("Features")]
     [SerializeField] private List<RectangularRoom> rooms = new List<RectangularRoom>();
@@ -36,9 +43,18 @@ public class MapManager : MonoBehaviour
     public int Width { get => width; }
     public int Height { get => height; }
     public TileBase FloorTile { get => floorTile; }
+    public TileBase GrassTile { get => grassTile; }
+    public TileBase CrateTile { get => crateTile; }
+    public TileBase TorchTile { get => torchTile; }
+    public TileBase TorchBaseTile { get => torchBaseTile; }
+
     public Tilemap FloorMap { get => floorMap; }
     public Tilemap FogMap { get => fogMap; }
+    public Tilemap ObjectsMap { get => objectsMap; }
+
     public Dictionary<Vector2Int, Node> Nodes { get => nodes; set => nodes = value; }
+
+    public SpriteRenderer noiseVis;
 
     private void Awake()
     {
@@ -82,6 +98,13 @@ public class MapManager : MonoBehaviour
                 break;
             case "Goblin":
                 Instantiate(goblin, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Goblin";
+                break;
+            case "Grass":
+                Vector3Int tilePos = new Vector3Int((int)position.x, (int)position.y, 0);
+                if (floorMap.HasTile(tilePos) && floorMap.GetColliderType(tilePos) == Tile.ColliderType.None)
+                { 
+                    objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), grassTile);
+                }
                 break;
             default:
                 Debug.LogError("Entity not found");
