@@ -41,7 +41,7 @@ static public class Action
     {
         int damage = actor.GetComponent<Fighter>().Power - target.GetComponent<Fighter>().Defense;
 
-        string attackDesc = $"{actor.name} ataca {target.name}";
+        string attackDesc = $"{actor.name} attacks {target.name}";
 
         string colorHex = "";
 
@@ -56,12 +56,12 @@ static public class Action
 
         if (damage > 0)
         {
-            UIManager.instance.AddMessage($"{attackDesc} por {damage} de dano.", colorHex);
+            UIManager.instance.AddMessage($"{attackDesc} with {damage} damage.", colorHex);
             target.GetComponent<Fighter>().Hp -= damage;
         }
         else
         {
-            UIManager.instance.AddMessage($"{attackDesc} mas falha criticamente.", colorHex);
+            UIManager.instance.AddMessage($"{attackDesc} but fails miserably.", colorHex);
         }
         GameManager.instance.EndTurn();
     }
