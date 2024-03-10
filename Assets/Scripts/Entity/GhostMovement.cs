@@ -54,13 +54,14 @@ public class GhostMovement : MonoBehaviour, Controls.IPlayerActions
         if (!UIManager.instance.IsMessageHistoryOpen)
         {
            
-            if (GameManager.instance.IsPlayerTurn)/*moveKeyHeld && 
+            //if ()
+            /*moveKeyHeld && 
                 GetComponent<Actor>().IsAlive &&
                 GetComponent<GhostAbility>().GhostAbilityAvailable)*/
-            {   
+            //{   
               //  Debug.Log(GetComponent<GhostAbility>().GhostAbilityAvailable);
                 MoveGhost();
-            }
+            //}
            
             
 

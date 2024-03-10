@@ -8,6 +8,7 @@ public class GhostAbility : MonoBehaviour
    [SerializeField] private bool ghostAbilityAvailable = false;
     [SerializeField] private int tilesMoved = 0;
     [SerializeField] private int turnsLeft = 4;
+    [SerializeField] private GameObject ghost;
     public bool GhostAbilityAvailable
     {
         get => ghostAbilityAvailable;
@@ -52,7 +53,11 @@ public class GhostAbility : MonoBehaviour
     // player turn speed = 4 
     // enemy turn speed = 1
     public void useGhostAbility(){
-            if (Input.GetKeyDown(KeyCode.Space)) ghostAbilityAvailable = !ghostAbilityAvailable;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ghostAbilityAvailable = !ghostAbilityAvailable;
+            Instantiate(ghost, new Vector3(/*posicao player*/), Quaternion.identity).name = "Ghost";
+        }
             if(ghostAbilityAvailable){
 
         }
