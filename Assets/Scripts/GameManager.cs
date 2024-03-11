@@ -42,6 +42,10 @@ public class GameManager : MonoBehaviour
     private void StartTurn()
     {
         //Debug.Log($"{Actors[actorNum].name} starts its turn!");
+        if (actorNum < 0 || actorNum >= actors.Count)
+        {
+            actorNum = 0;
+        }
         if (actors[actorNum].GetComponent<Player>())
         {
             isPlayerTurn = true;
