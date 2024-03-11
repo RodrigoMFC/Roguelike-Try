@@ -150,9 +150,12 @@ public class MapManager : MonoBehaviour
     ///<summary>Return True if x and y are inside of the bounds of this map. </summary>
     public bool InBounds(int x, int y) => 0 <= x && x < width && 0 <= y && y < height;
 
-    public bool TileIsGrass(Vector3Int position)
+    public bool TileIsGrass(Vector3Int position, bool includeFire = false)
     {
-        return objectsMap.HasTile(position) && grassTiles.Contains(objectsMap.GetTile(position));
+        return objectsMap.HasTile(position) && (
+            grassTiles.Contains(objectsMap.GetTile(position))
+            || (includeFire && objectsMap.GetTile(position) == grassFireTile)
+        );
     }
 
     public void CreateEntity(string entity, Vector2 position)

@@ -49,6 +49,10 @@ public class HostileEnemy : AI
                 else
                 { //If not in range, move towards target
                     MoveAlongPath(targetPosition);
+                    Vector3Int vector3Int = MapManager.instance.FloorMap.WorldToCell(transform.position);
+                    Actor actor = GetComponent<Actor>();
+                    actor.movementCost = MapManager.instance.TileIsGrass(vector3Int, true) ? 1 : 0;
+
                     // update facing direction of sprite 
                     spriteController.SetSprite(facingDirection);
                     return;
