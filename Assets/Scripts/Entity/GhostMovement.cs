@@ -16,7 +16,10 @@ public class GhostMovement : MonoBehaviour, Controls.IPlayerActions
 
     private void Awake() => controls = new Controls();
 
-
+    private void Start()
+    {
+        spriteController = GetComponentInChildren<SpriteController>();
+    }
     private void OnEnable()
     {
         controls.Player.SetCallbacks(this);

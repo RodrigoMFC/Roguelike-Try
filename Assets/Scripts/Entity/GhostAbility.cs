@@ -9,6 +9,9 @@ public class GhostAbility : MonoBehaviour
     [SerializeField] private int tilesMoved = 0;
     [SerializeField] private int turnsLeft = 4;
     [SerializeField] private GameObject ghost;
+
+    
+
     public bool GhostAbilityAvailable
     {
         get => ghostAbilityAvailable;
@@ -44,6 +47,8 @@ public class GhostAbility : MonoBehaviour
         }
         return false;
     }
+
+    //neste if meter que quando e preciso fazer reset os inimigos tem que se mover primeiro ent turn end 
     public void resetMovementCounter(){
         if(tilesMoved > turnsLeft ) tilesMoved = 0;
         return;
@@ -52,15 +57,15 @@ public class GhostAbility : MonoBehaviour
     // space is pressed
     // player turn speed = 4 
     // enemy turn speed = 1
-    public void useGhostAbility(){
+
+    public void useGhostAbility()
+    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ghostAbilityAvailable = !ghostAbilityAvailable;
-            Instantiate(ghost, new Vector3(/*posicao player*/), Quaternion.identity).name = "Ghost";
-        }
-            if(ghostAbilityAvailable){
-
+                ghostAbilityAvailable = !ghostAbilityAvailable;
+                ghost.transform.position = transform.position;
+                Debug.Log("REACHED!");
+                ghost.SetActive(ghostAbilityAvailable);            
         }
     }
 }
-

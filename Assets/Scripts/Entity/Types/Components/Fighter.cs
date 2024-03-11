@@ -39,11 +39,11 @@ sealed class Fighter : MonoBehaviour
     {
         if (GetComponent<Player>())
         {
-            UIManager.instance.AddMessage("Morreste!", "#ff0000"); //Red
+            UIManager.instance.AddMessage("You died!", "#ff0000"); //Red
         }
         else
         {
-            UIManager.instance.AddMessage($"{name} morreu!", "#ffa500"); //Light Orange
+            UIManager.instance.AddMessage($"{name} died!", "#ffa500"); //Light Orange
         }
 
         SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();

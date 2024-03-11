@@ -67,6 +67,8 @@ sealed class ProcGen
         //random room for the key spawn. // math max to avoid negative index
         var keyPos = rooms[Mathf.Max(0,rooms.Count - 2)].Center(); //FIXME: make it not spawn in center pls
         MapManager.instance.CreateEntity("Key", keyPos);
+
+        MapManager.instance.CreateEntity("Ghost", rooms[0].Center());
     }
 
     /// <summary>
