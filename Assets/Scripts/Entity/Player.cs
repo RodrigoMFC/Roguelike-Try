@@ -9,14 +9,19 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
     private SpriteController spriteController;
 
     [SerializeField] private bool moveKeyHeld; //read-only
-
     
+    private LadderObjectManager ladderObjectManager;
 
-    private void Awake() => controls = new Controls();
+
+    private void Awake()
+    {
+        controls = new Controls();
+    }
 
     private void Start()
     {
         spriteController = GetComponentInChildren<SpriteController>();
+        ladderObjectManager = GameObject.Find("LadderManager").GetComponent<LadderObjectManager>(); // spaguetti but f it we ball
     }
     private void OnEnable()
     {
@@ -71,6 +76,10 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
         Vector2 roundedDirection = new Vector2(Mathf.Round(direction.x), Mathf.Round(direction.y));
         Vector3 futurePosition = transform.position + (Vector3)roundedDirection;
         spriteController.SetSprite(roundedDirection);
+        Debug.Log(transform.position);
+
+        //update player position for ladder algorithm
+        ladderObjectManager.updatePlayerPosition(new Vector3(futurePosition.x-0.5f, futurePosition.y-0.5f, 0));
 
         if (IsValidPosition(futurePosition))
         

@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class MapManager : MonoBehaviour
 {
     public static MapManager instance;
+    private LadderObjectManager ladderObjectManager;
 
     [Header("Map Settings")]
     [SerializeField] private int width = 80;
@@ -25,6 +26,7 @@ public class MapManager : MonoBehaviour
     [SerializeField] private TileBase torchTile;
     [SerializeField] private TileBase torchBaseTile;
     [SerializeField] private TileBase ladderTile;
+    [SerializeField] private TileBase ladderDisabledTile;
 
     [Header("Tilemaps")]
     [SerializeField] private Tilemap floorMap;
@@ -47,6 +49,7 @@ public class MapManager : MonoBehaviour
     private Dictionary<Vector2Int, Node> nodes = new Dictionary<Vector2Int, Node>();
 
     [Header("Entities")]
+    [SerializeField] private GameObject key;
     [SerializeField] private GameObject goblin;
     [SerializeField] private GameObject imp;
     [SerializeField] private GameObject player;
@@ -88,6 +91,8 @@ public class MapManager : MonoBehaviour
     private void Start()
     {
         grassTiles = new TileBase[] { grassTile1, grassTile2, grassTile3 , grassTile4, grassTile5};
+        ladderObjectManager = GameObject.Find("LadderManager").GetComponent<LadderObjectManager>(); // spaguetti but f it we ball
+
 
         ProcGen procGen = new ProcGen();
         procGen.GenerateDungeon(width, height, roomMaxSize, roomMinSize, maxRooms, maxMonstersPerRoom, rooms);
@@ -154,6 +159,7 @@ public class MapManager : MonoBehaviour
                 Transform playerTransform = playerObject.transform;
                 CameraTracker cameraTracker = FindObjectOfType<CameraTracker>();
                 cameraTracker.SetTarget(playerTransform);
+                cameraTracker.TeleportCamera(playerTransform.position);
                 break;
             case "Imp":
                 Instantiate(imp, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity).name = "Imp";
@@ -170,6 +176,18 @@ public class MapManager : MonoBehaviour
                 break;
             case "Torch":
                 torchMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), torchTile);
+                break;
+            case "DisabledLadder":
+                torchMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), ladderDisabledTile);
+                ladderObjectManager.setLadder(new Vector3(position.x, position.y, 0));
+                break;
+            case "EnabledLadder":
+                torchMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), ladderTile);
+                break;
+            case "Key":
+                GameObject keyObject = Instantiate(key, new Vector3(position.x + 0.5f, position.y + 0.5f, 0), Quaternion.identity);
+                keyObject.name = "Key";
+                ladderObjectManager.setKey(new Vector3(position.x, position.y, 0), keyObject);
                 break;
             default:
                 Debug.LogError("Entity not found");

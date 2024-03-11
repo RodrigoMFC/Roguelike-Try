@@ -1,14 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 sealed class ProcGen
 {
     /// <summary>
     /// Generate a new dungeon map.
     /// </summary>
+
     public void GenerateDungeon(int mapWidth, int mapHeight, int roomMaxSize, int roomMinSize, int maxRooms, int maxMonstersPerRoom, List<RectangularRoom> rooms)
-    {
-        // Generate the rooms.
+    {        // Generate the rooms.
         for (int roomNum = 0; roomNum < maxRooms; roomNum++)
         {
             int roomWidth = Random.Range(roomMinSize, roomMaxSize);
@@ -58,6 +59,14 @@ sealed class ProcGen
         }
         //The first room, where the player starts.
         MapManager.instance.CreateEntity("Player", rooms[0].Center());
+
+        //last room, where we get end.
+        var ladderPos = rooms[rooms.Count - 1].Center();
+        MapManager.instance.CreateEntity("DisabledLadder", ladderPos);
+
+        //random room for the key spawn. // math max to avoid negative index
+        var keyPos = rooms[Mathf.Max(0,rooms.Count - 2)].Center(); //FIXME: make it not spawn in center pls
+        MapManager.instance.CreateEntity("Key", keyPos);
     }
 
     /// <summary>

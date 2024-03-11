@@ -24,7 +24,6 @@ public class CameraTracker : MonoBehaviour
     {
         gameUnitAccuratePosition = transform.position;
         mainCamera = Camera.main;
-        Debug.Log(mainCamera.orthographicSize);
         float heightTiles = (mainCamera.orthographicSize * 2);
         float widthTiles = (heightTiles / aspectRatioHeight * aspectRatioWidth);
         inGamePixelsVertical = heightTiles * pixelsPerUnit;
@@ -71,5 +70,11 @@ public class CameraTracker : MonoBehaviour
     public void SetTarget(Transform newTarget)
     {
         target = newTarget;
+    }
+
+    public void TeleportCamera(Vector3 position)
+    {
+        gameUnitAccuratePosition = position;
+        mainCamera.transform.position = position;
     }
 }

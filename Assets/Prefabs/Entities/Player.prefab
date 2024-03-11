@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1420924417, guid: 2e80f10a41bfedb4e905e36ad272ebe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -200,3 +200,4 @@ MonoBehaviour:
   ghostAbilityAvailable: 0
   tilesMoved: 0
   turnsLeft: 4
+  ghost: {fileID: 0}

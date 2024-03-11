@@ -418,7 +418,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8f85669612f67adcd8a05827ae41e995, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.047
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -621,6 +621,51 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1341872667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &760421176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760421178}
+  - component: {fileID: 760421177}
+  m_Layer: 0
+  m_Name: LadderManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &760421177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760421176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3822cda5350ac4296ed9853d15e762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+--- !u!4 &760421178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760421176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.209656, y: 11.167858, z: 0.07479716}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824519629
 GameObject:
@@ -952,7 +997,8 @@ MonoBehaviour:
   grassFireTile: {fileID: 11400000, guid: e7bfa78b0270402eb83b7fd9f25c8a2f, type: 2}
   torchTile: {fileID: 11400000, guid: 6e915fc26786601d497c48c2421b7182, type: 2}
   torchBaseTile: {fileID: 11400000, guid: 50a1a00a3c560135e9c279ac46dbacc8, type: 2}
-  ladderTile: {fileID: 0}
+  ladderTile: {fileID: 11400000, guid: 84d67f9c098eabd42ac7798600daa111, type: 2}
+  ladderDisabledTile: {fileID: 0}
   floorMap: {fileID: 557110810}
   fogMap: {fileID: 178230987}
   objectsMap: {fileID: 824519632}
@@ -964,6 +1010,7 @@ MonoBehaviour:
   grassTile5: {fileID: 11400000, guid: e736798dc56a232769f464e611a118de, type: 2}
   rooms: []
   visibleTiles: []
+  key: {fileID: 6473004727379304365, guid: a5508031e609c104491b5ab2c35d952b, type: 3}
   goblin: {fileID: 7877747119792723987, guid: f0eafb0ed5c1fe54482cd89228b0feb3, type: 3}
   imp: {fileID: 7877747119792723987, guid: 0a8f0099318981a4bbfdbc252fba31e4, type: 3}
   player: {fileID: 5746121207968234823, guid: 64987873950549e43b80b2b02be4d7c0, type: 3}
@@ -1483,3 +1530,4 @@ SceneRoots:
   - {fileID: 1341872667}
   - {fileID: 7757229820973984558}
   - {fileID: 1807845266}
+  - {fileID: 760421178}
