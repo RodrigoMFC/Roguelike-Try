@@ -1001,12 +1001,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156f8fc3219d1c448ac61fccaaabeb99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 80
-  height: 45
-  roomMaxSize: 20
+  width: 120
+  height: 60
+  roomMaxSize: 35
   roomMinSize: 15
-  maxRooms: 30
-  maxMonstersPerRoom: 2
+  maxRooms: 45
+  maxMonstersPerRoom: 3
   floorTile: {fileID: 11400000, guid: ac6cd14b5e0e142f39c1933918a531b8, type: 2}
   fogTile: {fileID: 11400000, guid: 412042efd0a339545a4785702217cb97, type: 2}
   crateTile: {fileID: 0}
