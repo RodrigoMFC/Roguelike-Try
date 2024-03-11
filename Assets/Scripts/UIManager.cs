@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class UIManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class UIManager : MonoBehaviour
     [Header("Health UI")]
     [SerializeField] private Slider hpSlider;
     [SerializeField] private TextMeshProUGUI hpSliderText;
+    [SerializeField] private GameObject gameOverRestartButton;
     [Header("Message UI")]
     [SerializeField] private int sameMessageCount = 0; //Read-only
     [SerializeField] private string lastMessage; //Read-only
@@ -32,6 +34,10 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void Restart() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //reloads scene
+    }
+
     public void SetHealthMax(int maxHp)
     {
         hpSlider.maxValue = maxHp;
@@ -41,6 +47,7 @@ public class UIManager : MonoBehaviour
     {
         hpSlider.value = hp;
         hpSliderText.text = $"HP: {hp}/{maxHp}";
+        gameOverRestartButton.SetActive(hp <= 0);
     }
 
     public void ToggleMessageHistory()

@@ -51,7 +51,13 @@ public class HostileEnemy : AI
                     MoveAlongPath(targetPosition);
                     Vector3Int vector3Int = MapManager.instance.FloorMap.WorldToCell(transform.position);
                     Actor actor = GetComponent<Actor>();
-                    actor.movementCost = MapManager.instance.TileIsGrass(vector3Int, true) ? 1 : 0;
+                    actor.movementCost = (MapManager.instance.TileIsGrass(vector3Int) || MapManager.instance.TileIsFire(vector3Int)) ? 1 : 0;
+                    if (MapManager.instance.TileIsFire(vector3Int))
+                    {
+                        // Omae wa mou shindeiru
+                        GetComponent<Fighter>().Hp = 0;
+
+                    }
 
                     // update facing direction of sprite 
                     spriteController.SetSprite(facingDirection);
