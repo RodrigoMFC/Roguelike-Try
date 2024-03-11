@@ -74,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1420924417, guid: 2e80f10a41bfedb4e905e36ad272ebe5, type: 3}
-  m_Color: {r: 0.7075472, g: 0.110137075, b: 0.110137075, a: 1}
+  m_Sprite: {fileID: 1526790468, guid: 1438d4f32b54ec5429f4bdd01c6ca174, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,10 +98,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: -956682039, guid: 2e80f10a41bfedb4e905e36ad272ebe5, type: 3}
-  - {fileID: 725145595, guid: 2e80f10a41bfedb4e905e36ad272ebe5, type: 3}
-  - {fileID: -760261047, guid: 2e80f10a41bfedb4e905e36ad272ebe5, type: 3}
-  - {fileID: -1420924417, guid: 2e80f10a41bfedb4e905e36ad272ebe5, type: 3}
+  - {fileID: -334716398, guid: 1438d4f32b54ec5429f4bdd01c6ca174, type: 3}
+  - {fileID: 572988625, guid: 1438d4f32b54ec5429f4bdd01c6ca174, type: 3}
+  - {fileID: 1136232812, guid: 1438d4f32b54ec5429f4bdd01c6ca174, type: 3}
+  - {fileID: 1526790468, guid: 1438d4f32b54ec5429f4bdd01c6ca174, type: 3}
 --- !u!1 &7877747119792723987
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blocksMovement: 1
+  movementCost: 0
   isAlive: 1
   fieldOfViewRange: 8
   fieldOfView: []
