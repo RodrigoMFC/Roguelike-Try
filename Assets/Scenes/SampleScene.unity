@@ -218,7 +218,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -334277927
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1014,6 +1014,7 @@ MonoBehaviour:
   goblin: {fileID: 7877747119792723987, guid: f0eafb0ed5c1fe54482cd89228b0feb3, type: 3}
   imp: {fileID: 7877747119792723987, guid: 0a8f0099318981a4bbfdbc252fba31e4, type: 3}
   player: {fileID: 5746121207968234823, guid: 64987873950549e43b80b2b02be4d7c0, type: 3}
+  ghost: {fileID: 3932907878434868757, guid: cf9b2a7779e4a0141bcfde1ef2d22aef, type: 3}
   noiseVis: {fileID: 0}
 --- !u!156049354 &1341872666
 Grid:

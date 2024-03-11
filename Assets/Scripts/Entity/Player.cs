@@ -82,10 +82,13 @@ sealed class Player : MonoBehaviour, Controls.IPlayerActions
         ladderObjectManager.updatePlayerPosition(new Vector3(futurePosition.x-0.5f, futurePosition.y-0.5f, 0));
 
         if (IsValidPosition(futurePosition))
-        
             moveKeyHeld = Action.BumpAction(GetComponent<Actor>(), roundedDirection); //If we bump into an entity, moveKeyHeld is set to false.
 
-        
+        Vector3Int gridPosition = MapManager.instance.FloorMap.WorldToCell(futurePosition);
+        if (MapManager.instance.TileIsGrass(gridPosition)) {
+            Vector2Int gridPosition2D = new Vector2Int(gridPosition.x, gridPosition.y);
+            MapManager.instance.CreateEntity("Fire", gridPosition2D);
+        }
     }
 
     private bool IsValidPosition(Vector3 futurePosition)

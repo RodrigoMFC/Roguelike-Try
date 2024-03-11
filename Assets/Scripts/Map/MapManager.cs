@@ -150,6 +150,11 @@ public class MapManager : MonoBehaviour
     ///<summary>Return True if x and y are inside of the bounds of this map. </summary>
     public bool InBounds(int x, int y) => 0 <= x && x < width && 0 <= y && y < height;
 
+    public bool TileIsGrass(Vector3Int position)
+    {
+        return objectsMap.HasTile(position) && grassTiles.Contains(objectsMap.GetTile(position));
+    }
+
     public void CreateEntity(string entity, Vector2 position)
     {
         switch (entity)
@@ -180,6 +185,9 @@ public class MapManager : MonoBehaviour
                 { 
                     objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), grassTiles[Random.Range(0, grassTiles.Length)]); // Get a random index
                 }
+                break;
+            case "Fire":
+                objectsMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), grassFireTile);
                 break;
             case "Torch":
                 torchMap.SetTile(new Vector3Int((int)position.x, (int)position.y, 0), torchTile);
